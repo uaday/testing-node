@@ -9,6 +9,9 @@ app.use(express.static(__dirname+'/public'));
 app.get('/',(req,res)=>{
   res.send('<h1>Hello Sudipta</h1>');
 });
+app.post('/home',(req,res)=>{
+  res.send(`${form-username}`);
+});
 app.get('/login',(req,res)=>{
   res.render('login.hbs',{
     title:'login-page'
